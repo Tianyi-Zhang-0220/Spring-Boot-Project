@@ -11,9 +11,9 @@ import org.springframework.web.bind.annotation.RequestMapping
 class MessageController {
     @GetMapping // marks it to HTTP GET calls
     // @RequestParam makes it bound as a web request param
-    fun index(@RequestParam("name") name: String) = "Hello, $name! Have a good day!"
-//    fun listMessages() = listOf(
-//                        Message("1", "Hello"),
-//                        Message("2", "Bonjour"),
-//                        Message("3", "Konichiwa"))
+//    fun index(@RequestParam("name") name: String) = "Hello, $name! Have a good day!"
+    fun listMessages() = listOf(
+                        Message("1", "Hello"),
+                        Message("2", "Bonjour"),
+                        Message("3", "Konnichi wa"))
 }
